@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Upload test cases to JIRA]">
+  <parameter name="appURL" value="https://jira.gfs.com"/>
+  <parameter name="browserType" value="chrome"/>
+  <test name="uploadTestCase(failed)">
+    <classes>
+      <class name="com.pack.runner.testCaseUploadRunner">
+        <methods>
+          <include name="uploadTestCase"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.pack.runner.testCaseUploadRunner -->
+    </classes>
+  </test> <!-- uploadTestCase(failed) -->
+</suite> <!-- Failed suite [Upload test cases to JIRA] -->
